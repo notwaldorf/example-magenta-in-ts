@@ -14,5 +14,7 @@
   "scripts": {
     "build": "webpack",
     "serve": "http-server src/"
-  }
+  },
+  "author": "Magenta",
+  "license": "Apache-2.0"
 }
