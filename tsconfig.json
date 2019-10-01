@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "declaration": true,
+    "allowJs": false,
+    "sourceMap": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedParameters": false,
+    "pretty": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnreachableCode": false,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "types": ["webmidi"],
+    "target": "es5",
+    "module": "es6",
+    "outDir": "./dist/"
+  },
+  "include": [ "src" ],
+  "exclude": [
+    "node_modules"
+  ]
+}
