@@ -65,7 +65,8 @@ const FULL_TWINKLE: mm.INoteSequence = {
   tempos: [
     {time: 0, qpm: 60}
   ],
-  quantizationInfo: {stepsPerQuarter: 4}
+  quantizationInfo: {stepsPerQuarter: 4},
+  totalQuantizedSteps: 96
 };
 
 // Create a visualizer.
