@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-import * as mm from '@magenta/music';
+import * as mm from '@magenta/music/es6';
 
 const FULL_TWINKLE: mm.INoteSequence = {
   notes: [
@@ -69,5 +69,30 @@ const FULL_TWINKLE: mm.INoteSequence = {
   totalQuantizedSteps: 96
 };
 
-// Create a visualizer.
-new mm.PianoRollSVGVisualizer(FULL_TWINKLE, document.querySelector('svg'));
+const viz = new mm.PianoRollSVGVisualizer(FULL_TWINKLE, document.querySelector('svg'));
+const btn = document.getElementById('btn') as HTMLButtonElement;
+const player = new mm.SoundFontPlayer(
+    'https://storage.googleapis.com/magentadata/js/soundfonts/salamander',
+    undefined, undefined, undefined,
+    {
+      run: (note) => {
+        viz.redraw(note, true);
+      },
+      stop: () => {
+        btn.textContent = 'Play';
+      }
+    });
+player.loadSamples(FULL_TWINKLE).then(() => {
+  btn.textContent = 'Play';
+  btn.disabled = false;
+});
+
+btn.addEventListener('click', () => {
+  if (player.isPlaying()) {
+    btn.textContent = 'Play';
+    player.stop();
+  } else {
+    btn.textContent = 'Stop';
+    player.start(FULL_TWINKLE);
+  }
+});

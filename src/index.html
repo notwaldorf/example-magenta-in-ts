@@ -15,13 +15,30 @@ limitations under the License.
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-  <title>Test</title>
+  <title>Demo</title>
+  <style>
+    body {
+      padding: 2em;
+      font-family: monospace;
+    }
+    button {
+      display: block;
+      font-family: inherit;
+      font-size: inherit;
+      border: 1px solid grey;
+      background: transparent;
+      cursor: pointer;
+      padding: 4px 8px;
+    }
+    button:hover {
+      border-color: black;
+    }
+  </style>
 </head>
 <body>
-  <h1>Example of using an mm.PianoRollSVGVisualizer:</h1>
-  <p>
-    Twinkle Twinkle:
-  </p>
+  <h1>Twinkle Twinkle Little Star:</h1>
+
+  <button id="btn" disabled>Loading samples...</button>
   <svg></svg>
 
   <script src="index.js"></script>

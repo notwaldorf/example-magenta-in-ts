@@ -16,7 +16,6 @@
     "allowUnreachableCode": false,
     "experimentalDecorators": true,
     "skipLibCheck": true,
-    "types": ["webmidi"],
     "target": "es5",
     "module": "es6",
     "moduleResolution": "node"

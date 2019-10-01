@@ -1,10 +1,9 @@
 {
-  "name": "test-magenta-in-ts",
+  "name": "example-magenta-in-ts",
   "version": "0.0.1",
-  "description": "Example of how to use magenta/music with es6 and typescript",
+  "description": "Example of how to use @magenta/music with es6 and TypeScript",
   "devDependencies": {
     "@magenta/music": "1.11.3",
-    "@types/webmidi": "^2.0.3",
     "http-server": "^0.11.1",
     "ts-loader": "^6.2.0",
     "typescript": "^3.6.3",
