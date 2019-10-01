@@ -19,7 +19,7 @@
     "types": ["webmidi"],
     "target": "es5",
     "module": "es6",
-    "outDir": "./dist/"
+    "moduleResolution": "node"
   },
   "include": [ "src" ],
   "exclude": [

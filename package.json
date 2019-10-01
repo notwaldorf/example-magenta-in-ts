@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Example of how to use magenta/music with es6 and typescript",
   "devDependencies": {
-    "@magenta/music": "1.11.2",
+    "@magenta/music": "1.11.3",
     "@types/webmidi": "^2.0.3",
     "http-server": "^0.11.1",
     "ts-loader": "^6.2.0",
